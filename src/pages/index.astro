@@ -9,67 +9,120 @@
 		<title>Theme Build for Astro</title>
 	</head>
 	<body>
-		<div id="container">
-			<header>Header</header>
-			<div id="fb1">
-				<nav>Navigation - Flex 1</nav>
-				<main>Main - Flex 3</main>
-			</div>
-			<div id="fb2">
-				<article class="articles">Article - Flex 1</article>
-				<article class="articles">Article - Flex 2</article>
-				<article class="articles">Article - Flex 3</article>
-			</div>
-			<footer>Footer</footer>
-		</div>
+		<!-- 
+    pageheader
+    showcase
+    features
+    pagecontent
+    semesters
+    pagefooter 
+    -->
+    <!-- Begin pageheader -->
+    <header id="pageheader">pageheader</header>
+    <!-- End pageheader -->
+    <!-- Begin showcase -->
+    <section id="showcase">showcase</section>
+    <!-- End showcase -->
+    <!-- Begin features -->
+    <section id="features">features</section>
+    <!-- End features -->
+    <!-- Begin pagecontent -->
+    <main id="pagecontent">pagecontent</main>
+    <!-- End pagecontent -->
+    <!-- Begin semesters -->
+    <section id="semesters">semesters</section>
+    <!-- End semesters -->
+    <!-- Begin pagefooter -->
+    <footer id="pagefooter">pagefooter</footer>
+    <!-- End pagefooter -->
 	</body>
 </html>
 <style>
-	body{
-		background-color: yellow;
-		color: white;
+	:root{
+		--color-primary:red;
+		--color-secondary:blue;
+	}
+	html{
+		font-size: 62.5%;
+		/* Allows you to use rems instead of pixels for sizing */
+		/* 
+		5px = 0.5rem 
+		10px = 1rem
+		16px = 1.6rem
+		20px = 2rem
+		60px = 6rem
+		*/
+	}
+	/* Browser Reset */
+	*, *::before, *::after{
+		margin: 0;
+		padding: 0;
 		box-sizing: border-box;
 	}
-	#container{
-		width: 80%;
-		margin: auto;
-		display: block;
+	/* Easy Pixel Calculations with REM unites */
+	body{
+		font-size: 1.6rem;
 	}
-	header{
-		min-height: 150px;
-		background-color: #800080;
+	/* Fix Browser Bounce on MacIOS */
+	body{
+		overflow-x: auto;
+		width: 100%;
+		overscroll-behavior: none;
+	}
+	#pageheader{
 		padding: 1rem;
-	}
-	nav{
-		min-height: 500px;
-		background-color: #0000FF;
-		padding: 1rem;
-		flex: 1;
-	}
-	main{
-		min-height: 500px;
-		background-color: #008001;
-		padding: 1rem;
-		flex: 2;
-	}
-	.articles{
 		min-height: 200px;
-		background-color: #ADD8E6;
-		border: 1px solid black;
+		background-color: coral;
+	}
+	#showcase{
 		padding: 1rem;
-		flex: 1;
+		min-height: 200px;
+		background-color: lightblue;
 	}
-	footer{
-		min-height: 150px;
-		background-color: #FFA500;
+	#features{
 		padding: 1rem;
+		min-height: 200px;
+		background-color: aqua;
 	}
-	#fb1{
-		border: 3px solid black;
-		display: flex;
+	#pagecontent{
+		padding: 1rem;
+		min-height: 200px;
+		background-color: lightgreen;
 	}
-	#fb2{
-		border: 3px solid red;
-		display: flex;
+	#semesters{
+		padding: 1rem;
+		min-height: 200px;
+		background-color: aquamarine;
+	}
+	#pagefooter{
+		padding: 1rem;
+		min-height: 200px;
+		background-color: cornflowerblue;
+	}
+	/* Media Queries */
+	@media only screen and (min-width: 320px){
+		body{
+			background-color: magenta;
+		}
+	}
+	@media only screen and (min-width: 480px){
+		body{
+			background-color: yellow;
+		}
+	}
+	@media only screen and (min-width: 768px){
+		body{
+			background-color: lime;
+		}
+	}
+	@media only screen and (min-width: 1024px){
+		body{
+			background-color: coral;
+		}
+	}
+	@media only screen and (min-width: 1200px){
+		body{
+			background-color: steelblue;
+		}
 	}
 </style>
