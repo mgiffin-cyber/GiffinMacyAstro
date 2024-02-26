@@ -1,0 +1,107 @@
+:root{
+    --color-primary:red;
+    --color-secondary:blue;
+}
+html{
+    font-size: 62.5%;
+    /* Allows you to use rems instead of pixels for sizing */
+    /* 
+    5px = 0.5rem 
+    10px = 1rem
+    16px = 1.6rem
+    20px = 2rem
+    60px = 6rem
+    */
+}
+/* Browser Reset */
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Easy Pixel Calculations with REM unites */
+body{
+    font-size: 1.6rem;
+}
+/* Fix Browser Bounce on MacIOS */
+body{
+    overflow-x: auto;
+    width: 100%;
+    overscroll-behavior: none;
+}
+/* General Mobile First CSS */
+.container{
+    background-color: white;
+    min-height: 10rem;
+    max-width: 120rem;
+    margin: auto;
+    padding: 0rem 3rem 0rem 3rem;
+}
+#pageheader{
+    padding: 1rem;
+    min-height: 200px;
+    background-color: coral;
+}
+#showcase{
+    padding: 1rem;
+    min-height: 200px;
+    background-color: lightblue;
+}
+#features{
+    padding: 1rem;
+    min-height: 200px;
+    background-color: aqua;
+}
+#pagecontent{
+    padding: 1rem;
+    min-height: 200px;
+    background-color: lightgreen;
+}
+#semesters{
+    padding: 1rem;
+    min-height: 200px;
+    background-color: aquamarine;
+}
+#pagefooter{
+    padding: 1rem;
+    min-height: 200px;
+    background-color: cornflowerblue;
+}
+/* Media Queries */
+@media only screen and (min-width: 320px){
+    body{
+        font-size: 1rem;
+    }
+    #features{
+        background-color: magenta;
+    }
+}
+@media only screen and (min-width: 480px){
+    body{
+        font-size: 1.4rem;
+    }
+    #features{
+        background-color: yellow;
+    }
+}
+@media only screen and (min-width: 768px){
+    body{
+        font-size: 1.6rem;
+    }
+    #features{
+        background-color: lime;
+    }
+}
+@media only screen and (min-width: 1024px){
+    #features{
+        background-color: coral;
+    }
+}
+@media only screen and (min-width: 1200px){
+    body{
+        font-size: 2rem;
+    }
+    #features{
+        background-color: steelblue;
+    }
+}
