@@ -1,3 +1,5 @@
+/* CSS Variables */
+/* Set Page Colors */
 :root{
     --color-primary:red;
     --color-secondary:blue;
@@ -19,29 +21,103 @@ html{
     padding: 0;
     box-sizing: border-box;
 }
-/* Easy Pixel Calculations with REM unites */
-body{
-    font-size: 1.6rem;
-}
 /* Fix Browser Bounce on MacIOS */
 body{
     overflow-x: auto;
     width: 100%;
     overscroll-behavior: none;
+    /* Allows for easy pizel calcs in rem */
+    font-size: 1.6rem;
 }
+/* 
+All Page Sections
+
+pageheader
+showcase 
+features
+pagecontent 
+semesters
+pagefooter
+*/
 /* General Mobile First CSS */
+body{
+    /* padding: 1rem; */
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7rem;
+    background-color: #f8fafc;
+    color: #333;
+}
+/* Link Styles */
+a{
+    color: red;
+    text-decoration: none;
+}
+/* Paragraph Styles */
+p{
+    margin: 1rem 0 1rem 0;
+}
+/* Header Styles */
+h1, h2{
+    text-align: center;
+}
+h1, h2, h3{
+    line-height: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* List Styles */
+li{
+    line-height: 2;
+}
+/* Container Styles */
 .container{
-    background-color: white;
-    min-height: 10rem;
     max-width: 120rem;
     margin: auto;
     padding: 0rem 3rem 0rem 3rem;
 }
+/* End of General Mobile First CSS */
+/* Header Section Styles */
 #pageheader{
-    padding: 1rem;
-    min-height: 200px;
-    background-color: coral;
+    background-color: var(--color-primary);
+    height: 7rem;
 }
+/* Special Header Container Styles */
+#pageheader, .container{
+    background-color: aquamarine;
+    border: 2px dashed red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem 0 2rem;
+}
+.logo img{
+    height: 6rem;
+}
+.logo:hover{
+    animation-name: swim;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+@keyframes swim{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(45deg);}
+}
+/* Header Menu */
+#menu{
+    background-color: #f0ad4a;
+    border: 2px dashed red;
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+    list-style-type: none;
+    background-color: none;
+}
+#menu li, a{
+    color: #fff;
+}
+/* End of Header Section Styles */
 #showcase{
     padding: 1rem;
     min-height: 200px;
