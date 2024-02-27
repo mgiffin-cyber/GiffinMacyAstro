@@ -81,7 +81,7 @@ li{
     height: 7rem;
 }
 /* Special Header Container Styles */
-#pageheader, .container{
+#pageheader .container{
     background-color: aquamarine;
     border: 2px dashed red;
     display: flex;
@@ -114,20 +114,75 @@ li{
     list-style-type: none;
     background-color: none;
 }
-#menu li, a{
+#menu li a{
     color: #fff;
 }
 /* End of Header Section Styles */
+/* Showcase Section Styles */
 #showcase{
-    padding: 1rem;
-    min-height: 200px;
-    background-color: lightblue;
+    border: 0.2rem solid none;
+    background-color: var(--color-primary);
+    padding: 3rem;
+    background-image: url(images/pond.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom left;
 }
+#showcasetext{
+    border: 0.2rem solid none;
+    color: #fff;
+    text-align: center;
+    margin: 5rem auto;
+    max-width: 60rem;
+}
+#showcase h1{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 1rem black;
+}
+#showcase blockquote{
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+#showcaseimage{
+    text-align: center;
+}
+#shaowcaseimage img{
+    border-radius: 1rem;
+    margin: auto;
+}
+#showcaseintro{
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+}
+/* Hide Big Logos/Technologies for Mobile */
+#logosbig{
+    display: none;
+}
+#logossmall{
+    width: 30rem;
+}
+/* End of Showcase Section Styles */
+/* Features Section */
 #features{
-    padding: 1rem;
-    min-height: 200px;
-    background-color: aqua;
+    padding-top: 2rem;
+    background-color: burlywood;
+    border: 2px dashed red;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    flex-direction: column;
 }
+.card{
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0rem 0rem 1rem silver;
+    margin-bottom: 2rem;
+    border-radius: 2.5rem;
+}
+/* End Features Section Styles */
 #pagecontent{
     padding: 1rem;
     min-height: 200px;
