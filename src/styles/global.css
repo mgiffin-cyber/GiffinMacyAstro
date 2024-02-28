@@ -183,16 +183,62 @@ li{
     border-radius: 2.5rem;
 }
 /* End Features Section Styles */
+/* PageContent Section */
 #pagecontent{
-    padding: 1rem;
-    min-height: 200px;
-    background-color: lightgreen;
+    background-color: none;
+    padding: 2rem 0 2rem 0;
 }
+#pagecontent h2, h3{
+    padding: 2rem;
+}
+#pagecontent h2{
+    font-size: 4rem;
+}
+#pagecontent h3{
+    font-size: 2.5rem;
+}
+/* End of PageContent Section */
+/* Semester Section */
 #semesters{
-    padding: 1rem;
-    min-height: 200px;
-    background-color: aquamarine;
+    padding: 2rem 0 2rem 0;
 }
+#semesters h2, #semesters h3{
+    padding: 2rem 0 2rem 0;
+}
+#semesters h2{
+    font-size: 4rem;
+}
+#semesters h3{
+    font-size: 2.5rem;
+}
+.assignments a{
+    color: #2d6858;
+}
+/* End of Semester Section */
+/* Semesters Thumbnail Section */
+.thumbnail{
+    background-color: burlywood;
+    border: 2px dashed red;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.thumb{
+    width: 150px;
+    height: 150px;
+}
+.thumb:hover{
+    animation-name: tilt;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes tilt{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(-15deg);}
+}
+/* End of Semesters Thumbnail Section */
 #pagefooter{
     padding: 1rem;
     min-height: 200px;
