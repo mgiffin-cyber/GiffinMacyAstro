@@ -1,8 +1,8 @@
 /* CSS Variables */
 /* Set Page Colors */
 :root{
-    --color-primary:red;
-    --color-secondary:blue;
+    --color-primary: #2d6848;
+    --color-secondary: #f0ad4a;
 }
 html{
     font-size: 62.5%;
