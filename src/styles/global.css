@@ -1,8 +1,8 @@
 /* CSS Variables */
 /* Set Page Colors */
 :root{
-    --color-primary: #2d6848;
-    --color-secondary: #f0ad4a;
+    --color-primary: #FBDDBD;
+    --color-secondary: #2F1B0F;
 }
 html{
     font-size: 62.5%;
@@ -42,7 +42,7 @@ pagefooter
 /* General Mobile First CSS */
 body{
     /* padding: 1rem; */
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     line-height: 1.7rem;
     background-color: #f8fafc;
     color: #333;
@@ -82,8 +82,7 @@ li{
 }
 /* Special Header Container Styles */
 #pageheader .container{
-    background-color: aquamarine;
-    border: 2px dashed red;
+    background-color: #875f41;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -106,16 +105,15 @@ li{
 }
 /* Header Menu */
 #menu{
-    background-color: #f0ad4a;
-    border: 2px dashed red;
+    background-color: none;
+    color: #fff;
     display: flex;
     justify-content: space-between;
     width: 20rem;
     list-style-type: none;
-    background-color: none;
 }
-#menu li a{
-    color: #fff;
+#menu li a:hover{
+    color: #ffe8cf;
 }
 /* End of Header Section Styles */
 /* Showcase Section Styles */
@@ -123,7 +121,7 @@ li{
     border: 0.2rem solid none;
     background-color: var(--color-primary);
     padding: 3rem;
-    background-image: url(images/pond.png);
+    background-image: url(dist/images/fog.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -131,24 +129,24 @@ li{
 }
 #showcasetext{
     border: 0.2rem solid none;
-    color: #fff;
+    color: var(--color-secondary);
     text-align: center;
     margin: 5rem auto;
     max-width: 60rem;
 }
 #showcase h1{
     font-size: 5rem;
-    margin-bottom: 2rem;
-    text-shadow: 0 0 1rem black;
+    margin-bottom: 2rem; 
 }
 #showcase blockquote{
     font-size: 2.4rem;
     margin-bottom: 2rem;
+    padding: 2rem;
 }
 #showcaseimage{
     text-align: center;
 }
-#shaowcaseimage img{
+#showcaseimage img{
     border-radius: 1rem;
     margin: auto;
 }
@@ -156,6 +154,7 @@ li{
     color: #fff;
     text-align: center;
     font-size: 3rem;
+    text-shadow: 0 0 1rem black;
 }
 /* Hide Big Logos/Technologies for Mobile */
 #logosbig{
@@ -168,24 +167,23 @@ li{
 /* Features Section */
 #features{
     padding-top: 2rem;
-    background-color: burlywood;
-    border: 2px dashed red;
+    background-color: #FBDDBD;
     display: flex;
     gap: 1rem;
     justify-content: space-between;
     flex-direction: column;
 }
 .card{
-    background-color: #fff;
+    background-color: #ffe8cf;
     padding: 2rem;
-    box-shadow: 0rem 0rem 1rem silver;
+    box-shadow: 0rem 0rem 1rem #875f41;
     margin-bottom: 2rem;
     border-radius: 2.5rem;
 }
 /* End Features Section Styles */
 /* PageContent Section */
 #pagecontent{
-    background-color: none;
+    background-color: #FBDDBD;
     padding: 2rem 0 2rem 0;
 }
 #pagecontent h2, h3{
@@ -193,6 +191,7 @@ li{
 }
 #pagecontent h2{
     font-size: 4rem;
+    color: var(--color-secondary);
 }
 #pagecontent h3{
     font-size: 2.5rem;
@@ -200,6 +199,7 @@ li{
 /* End of PageContent Section */
 /* Semester Section */
 #semesters{
+    background-color: #FBDDBD;
     padding: 2rem 0 2rem 0;
 }
 #semesters h2, #semesters h3{
@@ -212,13 +212,15 @@ li{
     font-size: 2.5rem;
 }
 .assignments a{
-    color: #2d6858;
+    color: #2F1B0F;
+}
+.assignments a:hover{
+    color: #875f41;
 }
 /* End of Semester Section */
 /* Semesters Thumbnail Section */
 .thumbnail{
     background-color: burlywood;
-    border: 2px dashed red;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -249,7 +251,6 @@ li{
 }
 #pagefooter .container{
     background-color: chocolate;
-    border: 2px solid red;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -271,20 +272,7 @@ li{
 }
 /* End of Footer Section */
 /* Media Queries */
-@media only screen and (min-width: 320px){
-    #features{
-        background-color: magenta;
-    }
-}
-@media only screen and (min-width: 480px){
-    #features{
-        background-color: yellow;
-    }
-}
 @media only screen and (min-width: 768px){
-    #features{
-        background-color: lime;
-    }
     .card{
         flex-basis: 30%;
     }
@@ -296,9 +284,6 @@ li{
     }
 }
 @media only screen and (min-width: 1024px){
-    #features{
-        background-color: coral;
-    }
     #logosbig{
         display: block;
         margin: auto;
@@ -308,9 +293,6 @@ li{
     }
 }
 @media only screen and (min-width: 1200px){
-    #features{
-        background-color: steelblue;
-    }
     #pagefooterlinks{
         display: block;
     }
