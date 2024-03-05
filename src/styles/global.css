@@ -121,7 +121,7 @@ li{
     border: 0.2rem solid none;
     background-color: var(--color-primary);
     padding: 3rem;
-    background-image: url(/public/images/coffee.png);
+    background-image: url(images/coffee.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
