@@ -121,15 +121,15 @@ li{
     border: 0.2rem solid none;
     background-color: var(--color-primary);
     padding: 3rem;
-    background-image: url(dist/images/fog.png);
+    background-image: url(/public/images/coffee.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: bottom left;
+    background-position: bottom left; 
 }
 #showcasetext{
     border: 0.2rem solid none;
-    color: var(--color-secondary);
+    color: #fff;
     text-align: center;
     margin: 5rem auto;
     max-width: 60rem;
