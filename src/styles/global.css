@@ -77,7 +77,7 @@ li{
 /* End of General Mobile First CSS */
 /* Header Section Styles */
 #pageheader{
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
     height: 7rem;
 }
 /* Special Header Container Styles */
@@ -167,7 +167,7 @@ li{
 /* Features Section */
 #features{
     padding-top: 2rem;
-    background-color: #FBDDBD;
+    background-color: var(--color-primary);
     display: flex;
     gap: 1rem;
     justify-content: space-between;
@@ -250,7 +250,7 @@ li{
     padding-top: 6rem;
 }
 #pagefooter .container{
-    background-color: chocolate;
+    background-color: #875F41;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
