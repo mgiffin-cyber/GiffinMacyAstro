@@ -82,12 +82,14 @@ li{
 }
 /* Special Header Container Styles */
 #pageheader .container{
-    background-color: #875f41;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
     padding: 0 2rem 0 2rem;
+}
+#pageheader{
+    background-color: #875f41;
 }
 .logo img{
     height: 6rem;
@@ -165,13 +167,15 @@ li{
 }
 /* End of Showcase Section Styles */
 /* Features Section */
-#features{
+#features .container{
     padding-top: 2rem;
-    background-color: var(--color-primary);
     display: flex;
     gap: 1rem;
     justify-content: space-between;
     flex-direction: column;
+}
+#features{
+    background-color: var(--color-primary);
 }
 .card{
     background-color: #ffe8cf;
