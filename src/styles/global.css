@@ -49,7 +49,7 @@ body{
 }
 /* Link Styles */
 a{
-    color: red;
+    color: #333;
     text-decoration: none;
 }
 /* Paragraph Styles */
@@ -243,6 +243,26 @@ li{
 @keyframes tilt{
     0%{transform:rotate(0deg);}
     100%{transform:rotate(-15deg);}
+}
+#semesters a{
+    position: relative;
+}
+#semesters a[data-tool-tip]::after {
+    transition: all 0.5s;
+    transform: scale(0);
+    content: attr(data-tool-tip);
+    padding: 0.5rem;
+    background-color: rgba(47,27,15, 0.8);
+    color: #fff;
+    position: absolute;
+    font-size: 2rem;
+    border-radius: 5px;
+    bottom: 100%;
+    left: 0%;
+    text-align: center;
+}
+#semesters a[data-tool-tip]:hover::after {
+    transform: scale(1);
 }
 /* End of Semesters Thumbnail Section */
 /* Footer Section */
