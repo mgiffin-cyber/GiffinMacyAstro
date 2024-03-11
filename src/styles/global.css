@@ -252,7 +252,7 @@ li{
     transform: scale(0);
     content: attr(data-tool-tip);
     padding: 0.5rem;
-    background-color: rgba(47,27,15, 0.8);
+    background-color: rgba(47, 27, 15, 0.8);
     color: #fff;
     position: absolute;
     font-size: 2rem;
