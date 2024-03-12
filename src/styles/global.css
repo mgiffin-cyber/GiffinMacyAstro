@@ -147,6 +147,17 @@ li{
     padding: 2rem;
     line-height: 3rem;
 }
+#showcase blockquote::before{
+    font-size: 23px;
+    content: "“";
+}
+#showcase blockquote::after{
+    font-size: 23px;
+    content: "”";
+}
+#showcase p{
+    font-size: 23px;
+}
 #showcaseimage{
     text-align: center;
 }
@@ -295,6 +306,18 @@ li{
 }
 #pagefooterlinks{
     display: none;
+}
+#pagefooter blockquote::before{
+    font-size: 15px;
+    content: "“";
+}
+#pagefooter blockquote::after{
+    font-size: 15px;
+    content: "”";
+}
+#pagefooter p{
+    font-size: 15px;
+    text-align: center;
 }
 /* End of Footer Section */
 /* Media Queries */
